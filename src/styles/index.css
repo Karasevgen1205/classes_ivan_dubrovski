@@ -1,50 +1,242 @@
 * {
-    color: black;
-    box-sizing: border-box;
+  color: black;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
+  /* background-color: bisque; */
 }
 
 ul,
 ol {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    color: inherit;
-    text-decoration: none;
+  color: inherit;
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+p,
+span,
+div,
+blockquote,
+i {
+  font-family: "Montserrat";
+  font-style: normal;
+  margin: 0;
+}
+
+.background-wrapper {
+  background-image: url(./HB_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .container {
-    max-width: 1300px;
-    margin: 0 auto;
-    background-color: rgb(220, 216, 216);
+  max-width: 1300px;
+  margin: 0 auto;
+  border: 1px solid red;
 }
 
 .header {
-    width: 100%;
+  width: 100%;
 }
 
 .header__wrapper {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  margin-left: 70px;
 }
 
 .header__info {
-    display: flex;
+  display: flex;
 }
 
 .header__list {
-    display: flex;
-    margin-right: 58px;
+  display: flex;
+  margin-right: 58px;
+  margin-top: 39px;
 }
 
 .header__item {
-    margin-right: 15px;
+  margin-right: 15px;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 104.7%;
+  text-transform: uppercase;
+}
+
+.header__item:hover {
+  color: rgba(3, 126, 140, 1);
 }
 
 .header__item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
+
+.header__phone {
+  /* margin-left: 88px; */
+  margin-top: 36px;
+  font-size: 20px;
+  line-height: 104.7%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+
+.header__call {
+  display: block;
+  width: 177px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 9px;
+  margin-top: 11px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 104.7%;
+  letter-spacing: 0.02em;
+  border: none;
+}
+
+.banner__wrapper {
+  width: 50%;
+}
+
+.banner__title {
+  /* position: absolute;
+    top: 262px;
+left: 70px;
+width: 595px;
+height: 264px; */
+  /* font-family: 'Montserrat';
+font-style: normal; */
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 125.5%;
+  /* or 88px */
+  letter-spacing: 0.045em;
+  color: #ffffff;
+  margin-top: 108px;
+  margin-bottom: 37px;
+}
+
+.banner__text {
+  /*position: absolute;
+    width: 644px;
+    height: 26px;*/
+  /* font-family: 'Montserrat';
+    font-style: normal; */
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 108.7%;
+  color: #ffffff;
+  /* margin-left: 70px; */
+  /* margin-top: 563px; */
+  margin-bottom: 82px;
+}
+
+.banner__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 274px;
+  height: 55px;
+  background: #037e8c;
+  border-radius: 9px;
+  color: #ffffff;
+  /* font-family: 'Montserrat';
+    font-style: normal; */
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 108.7%;
+  /* margin-left: 70px; */
+}
+
+.banner__btn span {
+  margin-right: 32px;
+}
+
+/* .banner__btn__icon{
+    width: 31px;
+height: 31px;
+background: #FFFFFF;
+border:  1px solid green;
+} */
+
+/*=============MAIN=================*/
+
+.advantages__item {
+  display: flex;
+}
+
+.cadvantages__title {
+  display: block;
+}
+
+.advantages__text {
+  display: block;
+}
+
+.advantages__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  /* width: 300px; */
+  /* width: 25%; */
+  width: calc(25% - 22px);
+  background-color: aquamarine;
+}
+
+.advantages__images {
+  margin-bottom: 21px;
+}
+
+.advantages__images img:first-child {
+  position: relative;
+  z-index: 1;
+}
+
+.advantages__images img:last-child {
+  position: relative;
+  left: -20px;
+}
+
+.advantages__title {
+  margin-bottom: 15px;
+}
+
+.advantages__text {
+  margin-bottom: 20px;
+}
+
+/* h1
+
+.header
+
+#header
+
+a[href$="https://kyfar"] {
+
+} */
